@@ -1,6 +1,5 @@
 ﻿using CharactersEditor.DAL;
 using CharactersEditor.Models;
-using Microsoft.Build.Framework.XamlTypes;
 using System;
 using System.Collections.Generic;
 using System.Data;
