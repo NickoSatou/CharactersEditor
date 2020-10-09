@@ -1,0 +1,41 @@
+﻿@model CharactersEditor.Models.Character
+
+@{
+    ViewBag.Title = "Детали";
+}
+
+<h2>Подробная информация о персонаже</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pseudonym)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pseudonym)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Kind)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Kind)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Position)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Universe)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Universe)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Редактировать", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Вернуться к списку", "Index")
+</p>
